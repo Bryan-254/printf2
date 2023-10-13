@@ -10,5 +10,6 @@ int _strlencon(const char *str);
 int print_perc(void);
 int printf_int(va_list args);
 int printf_deci(va_list args);
+int print_b(va_list val);
 
 #endif
