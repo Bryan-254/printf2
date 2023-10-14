@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * prinf_char - This function prints a character
+ * prinf_c - This function prints a character
  * @vals: The argument to be checked
  * Return: 1
  */
