@@ -20,5 +20,7 @@ int print_hex(va_list vals);
 int print_HEX(va_list vals);
 int print_HEX_extra(unsigned int num);
 int printf_sec_string(va_list vals);
+int print_pointer(va_list vals);
+int print_hex_extra(unsigned long int num);
 
 #endif
