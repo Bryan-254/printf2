@@ -6,7 +6,7 @@
  * Return: An integer
  */
 
-int print_b(va_list val)
+int print_b(va_list vals)
 {
 	int flag = 0;
 	int count = 0;
