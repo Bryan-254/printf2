@@ -9,18 +9,18 @@
 int printf_int(va_list args)
 {
 	int n = va_arg(args, int);
-	int num, final = n % 10, digit, exp = 1;
+	int num, last = n % 10, digit, exp = 1;
 	int x = 1;
 
 	n = n / 10;
 	num = n;
 
-	if (final < 0)
+	if (last < 0)
 	{
 		_putchar('-');
 		num = -num;
 		n = -n;
-		final = -final;
+		last = -last;
 		x++;
 	}
 	if (num > 0)
@@ -40,7 +40,7 @@ int printf_int(va_list args)
 			x++;
 		}
 	}
-	_putchar(final + '0');
+	_putchar(last + '0');
 
 	return (x);
 }
@@ -56,18 +56,18 @@ int printf_int(va_list args)
 int printf_deci(va_list args)
 {
 	int n = va_arg(args, int);
-	int num, final = n % 10, digit, exp = 1;
+	int num, last = n % 10, digit, exp = 1;
 	int x = 1;
 
 	n = n / 10;
 	num = n;
 
-	if (final < 0)
+	if (last < 0)
 	{
 		_putchar('-');
 		num = -num;
 		n = -n;
-		final = -final;
+		last = -last;
 		x++;
 	}
 	if (num > 0)
@@ -86,7 +86,7 @@ int printf_deci(va_list args)
 			x++;
 		}
 	}
-	_putchar(final + '0');
+	_putchar(last + '0');
 
 	return (x);
 }

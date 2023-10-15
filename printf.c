@@ -13,8 +13,7 @@ int _printf(const char *format, ...)
 		{"%d", printf_int}, {"%b", print_b}, {"%u", printf_unsigned},
 		{"%o", printf_oct}, {"%x", print_hex}, {"%X", print_HEX},
 		{"%S", printf_sec_string}, {"%p", print_pointer}, {"%d", printf_deci},
-		{"%%", print_perc},
-		{NULL, NULL},
+		{"%%", print_perc}, {'\0', NULL}
 	};
 
 	va_list args;
@@ -22,8 +21,6 @@ int _printf(const char *format, ...)
 	int z;
 
 	va_start(args, format);
-	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
-		return (-1);
 
 Here:
 	while (format[x] != '\0')
