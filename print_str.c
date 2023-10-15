@@ -2,7 +2,7 @@
 
 /**
  * printf_s - This function prints a string
- * vals: This is the argument
+ * @vals: This is the argument
  * Return: String length
  */
 

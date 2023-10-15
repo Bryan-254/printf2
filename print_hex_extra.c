@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * print_hex - This function converts to hex
- * @vals: The value to be converted
+ * print_hex_extra - This function converts to hex
+ * @num: The value to be converted
  * Return: The counter
  */
 
@@ -11,8 +11,8 @@ int print_hex_extra(unsigned long int num)
 	long int x;
 	long int counter = 0;
 	long int *array;
-	unsigned long int tem = num;
-	
+	unsigned long int temp = num;
+
 	while (num / 16 != 0)
 	{
 		num = num / 16;
@@ -20,16 +20,11 @@ int print_hex_extra(unsigned long int num)
 	}
 	counter++;
 	array = malloc(counter * sizeof(long int));
-	
-	if (array == NULL)
-	{
-		return (NULL);
-	}
-	
+
 	for (x = 0; x < counter; x++)
 	{
-		array[x] = tem % 16;
-		tem = tem / 16;
+		array[x] = temp % 16;
+		temp = temp / 16;
 	}
 	for (x = counter - 1; x >= 0; x--)
 	{

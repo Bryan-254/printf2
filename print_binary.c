@@ -10,7 +10,8 @@ int print_b(va_list vals)
 {
 	int flag = 0;
 	int count = 0;
-	int x, a = 1, b;
+	int x, a = 1;
+	int b;
 	unsigned int num = va_arg(vals, unsigned int);
 	unsigned int y;
 
@@ -21,8 +22,8 @@ int print_b(va_list vals)
 			flag = 1;
 		if (flag)
 		{
-			a = y >> (31 - x);
-			_putchar(a + 48);
+			b = y >> (31 - x);
+			_putchar(b + 48);
 			count++;
 		}
 	}

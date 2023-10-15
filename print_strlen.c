@@ -11,7 +11,7 @@ int _strlen(char *str)
 	int x;
 	int count;
 
-	for (x = 0 str[x] != 0 ; x++)
+	for (x = 0 ; str[x] != 0 ; x++)
 		count++;
 	return (x);
 }
@@ -29,5 +29,5 @@ int _strlencon(const char *str)
 
 	for (x = 0 ; str[x] != 0 ; x++)
 		count++;
-	return (i);
+	return (x);
 }
